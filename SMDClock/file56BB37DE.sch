@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:SMDClock-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TedsComponents
+LIBS:SMDClock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DS1307 U5
+U 1 1 56BB53FE
+P 2750 2550
+F 0 "U5" H 2750 1850 60  0000 C CNN
+F 1 "DS1307" H 2750 2850 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2750 2550 60  0001 C CNN
+F 3 "" H 2750 2550 60  0000 C CNN
+	1    2750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 56BB548F
+P 1800 2100
+F 0 "Y1" H 1800 2250 50  0000 C CNN
+F 1 "Crystal" H 1800 1950 50  0000 C CNN
+F 2 "Crystals:Crystal_Watch" H 1800 2100 50  0001 C CNN
+F 3 "" H 1800 2100 50  0000 C CNN
+	1    1800 2100
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 56BB554C
+P 2400 1600
+F 0 "#PWR016" H 2400 1350 50  0001 C CNN
+F 1 "GND" H 2400 1450 50  0000 C CNN
+F 2 "" H 2400 1600 50  0000 C CNN
+F 3 "" H 2400 1600 50  0000 C CNN
+	1    2400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR017
+U 1 1 56BB5586
+P 2850 1400
+F 0 "#PWR017" H 2850 1250 50  0001 C CNN
+F 1 "+5V" H 2850 1540 50  0000 C CNN
+F 2 "" H 2850 1400 50  0000 C CNN
+F 3 "" H 2850 1400 50  0000 C CNN
+	1    2850 1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3250 2350
+$Comp
+L GND #PWR018
+U 1 1 56BB560C
+P 2550 3450
+F 0 "#PWR018" H 2550 3200 50  0001 C CNN
+F 1 "GND" H 2550 3300 50  0000 C CNN
+F 2 "" H 2550 3450 50  0000 C CNN
+F 3 "" H 2550 3450 50  0000 C CNN
+	1    2550 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 2650 2    60   Input ~ 0
+SCL
+Text GLabel 3350 2750 2    60   Input ~ 0
+SDA
+$Comp
+L C C6
+U 1 1 56BB5767
+P 3800 1850
+F 0 "C6" H 3825 1950 50  0000 L CNN
+F 1 ".1u" H 3825 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3838 1700 50  0001 C CNN
+F 3 "" H 3800 1850 50  0000 C CNN
+	1    3800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 56BB57E0
+P 3800 1600
+F 0 "#PWR019" H 3800 1450 50  0001 C CNN
+F 1 "+5V" H 3800 1740 50  0000 C CNN
+F 2 "" H 3800 1600 50  0000 C CNN
+F 3 "" H 3800 1600 50  0000 C CNN
+	1    3800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 56BB580D
+P 3800 2100
+F 0 "#PWR020" H 3800 1850 50  0001 C CNN
+F 1 "GND" H 3800 1950 50  0000 C CNN
+F 2 "" H 3800 2100 50  0000 C CNN
+F 3 "" H 3800 2100 50  0000 C CNN
+	1    3800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R37
+U 1 1 56BD456C
+P 4450 2350
+F 0 "R37" V 4530 2350 50  0000 C CNN
+F 1 "4K7" V 4450 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4380 2350 50  0001 C CNN
+F 3 "" H 4450 2350 50  0000 C CNN
+	1    4450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R38
+U 1 1 56BD45B1
+P 4650 2350
+F 0 "R38" V 4730 2350 50  0000 C CNN
+F 1 "4K7" V 4650 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4580 2350 50  0001 C CNN
+F 3 "" H 4650 2350 50  0000 C CNN
+	1    4650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1950 2250 1950
+Wire Wire Line
+	2250 1950 2250 2050
+Wire Wire Line
+	1800 2250 2250 2250
+Wire Wire Line
+	2250 2250 2250 2150
+Wire Wire Line
+	2400 1600 2650 1600
+Wire Wire Line
+	2650 1600 2650 1750
+Wire Wire Line
+	2850 1400 2850 1750
+Wire Wire Line
+	2550 3350 2550 3450
+Wire Wire Line
+	3350 2750 3250 2750
+Wire Wire Line
+	3250 2650 3350 2650
+Wire Wire Line
+	3800 1600 3800 1700
+Wire Wire Line
+	3800 2100 3800 2000
+Wire Wire Line
+	4450 2500 3300 2500
+Wire Wire Line
+	3300 2500 3300 2650
+Connection ~ 3300 2650
+Wire Wire Line
+	4650 2500 4650 3050
+Wire Wire Line
+	4650 3050 3300 3050
+Wire Wire Line
+	3300 3050 3300 2750
+Connection ~ 3300 2750
+$Comp
+L +5V #PWR021
+U 1 1 56BD4621
+P 4350 1900
+F 0 "#PWR021" H 4350 1750 50  0001 C CNN
+F 1 "+5V" H 4350 2040 50  0000 C CNN
+F 2 "" H 4350 1900 50  0000 C CNN
+F 3 "" H 4350 1900 50  0000 C CNN
+	1    4350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1900 4350 2200
+Wire Wire Line
+	4350 2200 4650 2200
+Connection ~ 4450 2200
+$EndSCHEMATC

@@ -1,0 +1,183 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery BT1
+U 1 1 56F1DEDA
+P 1800 1550
+F 0 "BT1" H 1900 1600 50  0000 L CNN
+F 1 "Battery" H 1900 1500 50  0000 L CNN
+F 2 "" V 1800 1590 50  0001 C CNN
+F 3 "" V 1800 1590 50  0000 C CNN
+	1    1800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 56F1DF21
+P 4400 1600
+F 0 "D4" H 4400 1700 50  0000 C CNN
+F 1 "LED" H 4400 1500 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 4400 1600 50  0001 C CNN
+F 3 "" H 4400 1600 50  0000 C CNN
+	1    4400 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 56F1DFBC
+P 4100 1600
+F 0 "D3" H 4100 1700 50  0000 C CNN
+F 1 "LED" H 4100 1500 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 4100 1600 50  0001 C CNN
+F 3 "" H 4100 1600 50  0000 C CNN
+	1    4100 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 56F1DFDD
+P 3800 1600
+F 0 "D2" H 3800 1700 50  0000 C CNN
+F 1 "LED" H 3800 1500 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 3800 1600 50  0001 C CNN
+F 3 "" H 3800 1600 50  0000 C CNN
+	1    3800 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 56F1E005
+P 3500 1600
+F 0 "D1" H 3500 1700 50  0000 C CNN
+F 1 "LED" H 3500 1500 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 3500 1600 50  0001 C CNN
+F 3 "" H 3500 1600 50  0000 C CNN
+	1    3500 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 56F1E029
+P 3500 2100
+F 0 "R1" V 3580 2100 50  0000 C CNN
+F 1 "470R" V 3500 2100 50  0000 C CNN
+F 2 "LEDs:LED_0805" V 3430 2100 50  0001 C CNN
+F 3 "" H 3500 2100 50  0000 C CNN
+	1    3500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56F1E07B
+P 3800 2100
+F 0 "R2" V 3880 2100 50  0000 C CNN
+F 1 "470R" V 3800 2100 50  0000 C CNN
+F 2 "LEDs:LED_0805" V 3730 2100 50  0001 C CNN
+F 3 "" H 3800 2100 50  0000 C CNN
+	1    3800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56F1E0B0
+P 4100 2100
+F 0 "R3" V 4180 2100 50  0000 C CNN
+F 1 "470R" V 4100 2100 50  0000 C CNN
+F 2 "LEDs:LED_0805" V 4030 2100 50  0001 C CNN
+F 3 "" H 4100 2100 50  0000 C CNN
+	1    4100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56F1E0E8
+P 4400 2100
+F 0 "R4" V 4480 2100 50  0000 C CNN
+F 1 "470R" V 4400 2100 50  0000 C CNN
+F 2 "LEDs:LED_0805" V 4330 2100 50  0001 C CNN
+F 3 "" H 4400 2100 50  0000 C CNN
+	1    4400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1950 4400 1800
+Wire Wire Line
+	4100 1950 4100 1800
+Wire Wire Line
+	3800 1950 3800 1800
+Wire Wire Line
+	3500 1950 3500 1800
+Connection ~ 4100 1400
+Connection ~ 3800 1400
+Connection ~ 3500 1400
+Wire Wire Line
+	1800 2250 4400 2250
+Connection ~ 4100 2250
+Connection ~ 3800 2250
+Wire Wire Line
+	1800 2250 1800 1700
+Connection ~ 3500 2250
+$Comp
+L SPST SW1
+U 1 1 56F1E2A4
+P 2600 1250
+F 0 "SW1" H 2600 1350 50  0000 C CNN
+F 1 "SPST" H 2600 1150 50  0000 C CNN
+F 2 "" H 2600 1250 50  0000 C CNN
+F 3 "" H 2600 1250 50  0000 C CNN
+	1    2600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1400 1800 1250
+Wire Wire Line
+	1800 1250 2100 1250
+Wire Wire Line
+	3100 1250 3500 1250
+Wire Wire Line
+	3500 1250 3500 1400
+Wire Wire Line
+	3500 1400 4400 1400
+$EndSCHEMATC

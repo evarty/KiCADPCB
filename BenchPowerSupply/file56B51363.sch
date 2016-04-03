@@ -1,0 +1,372 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TedsComponents
+LIBS:BenchPowerSupply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R3
+U 1 1 56B51373
+P 2000 1200
+F 0 "R3" V 2080 1200 50  0000 C CNN
+F 1 "0R1" V 2000 1200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1930 1200 50  0001 C CNN
+F 3 "" H 2000 1200 50  0000 C CNN
+	1    2000 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 800  1600 1350
+Wire Wire Line
+	1600 1200 1850 1200
+$Comp
+L R R1
+U 1 1 56B5142E
+P 1600 1500
+F 0 "R1" V 1680 1500 50  0000 C CNN
+F 1 "10K" V 1600 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1530 1500 50  0001 C CNN
+F 3 "" H 1600 1500 50  0000 C CNN
+	1    1600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56B51478
+P 1600 2000
+F 0 "R2" V 1680 2000 50  0000 C CNN
+F 1 "10K" V 1600 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1530 2000 50  0001 C CNN
+F 3 "" H 1600 2000 50  0000 C CNN
+	1    1600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56B514A8
+P 1600 2400
+F 0 "#PWR02" H 1600 2150 50  0001 C CNN
+F 1 "GND" H 1600 2250 50  0000 C CNN
+F 2 "" H 1600 2400 50  0000 C CNN
+F 3 "" H 1600 2400 50  0000 C CNN
+	1    1600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2400 1600 2150
+Wire Wire Line
+	1600 1850 1600 1650
+Connection ~ 1600 1200
+$Comp
+L R R4
+U 1 1 56B51B02
+P 2250 1400
+F 0 "R4" V 2330 1400 50  0000 C CNN
+F 1 "10K" V 2250 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2180 1400 50  0001 C CNN
+F 3 "" H 2250 1400 50  0000 C CNN
+	1    2250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 56B51B44
+P 2600 1550
+F 0 "R5" V 2680 1550 50  0000 C CNN
+F 1 "10K" V 2600 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2530 1550 50  0001 C CNN
+F 3 "" H 2600 1550 50  0000 C CNN
+	1    2600 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L TL972 U1
+U 2 1 56B51D0F
+P 3550 1900
+F 0 "U1" H 3550 2100 60  0000 C CNN
+F 1 "TL972" H 3550 1700 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 3550 1900 60  0001 C CNN
+F 3 "" H 3550 1900 60  0000 C CNN
+	2    3550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1900 1750 1900
+Wire Wire Line
+	1750 1900 1750 1750
+Wire Wire Line
+	1750 1750 1600 1750
+Connection ~ 1600 1750
+Wire Wire Line
+	2150 1200 5250 1200
+Wire Wire Line
+	2250 1200 2250 1250
+Wire Wire Line
+	2100 1550 2450 1550
+Wire Wire Line
+	2750 1550 3050 1550
+Wire Wire Line
+	3050 1400 3050 1850
+Wire Wire Line
+	2950 1850 3150 1850
+Wire Wire Line
+	2100 1800 2100 1550
+Connection ~ 2250 1550
+Connection ~ 3050 1850
+$Comp
+L R R6
+U 1 1 56B52054
+P 3550 2250
+F 0 "R6" V 3630 2250 50  0000 C CNN
+F 1 "470K" V 3550 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3480 2250 50  0001 C CNN
+F 3 "" H 3550 2250 50  0000 C CNN
+	1    3550 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 2250 4950 2250
+Wire Wire Line
+	3400 2250 3150 2250
+Wire Wire Line
+	3150 1950 3150 2350
+$Comp
+L POT RV1
+U 1 1 56B520F1
+P 3150 2600
+F 0 "RV1" H 3150 2500 50  0000 C CNN
+F 1 "10K" H 3150 2600 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 3150 2600 50  0001 C CNN
+F 3 "" H 3150 2600 50  0000 C CNN
+	1    3150 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2600 3300 2350
+Wire Wire Line
+	3300 2350 3150 2350
+Connection ~ 3150 2250
+$Comp
+L GND #PWR03
+U 1 1 56B52249
+P 3150 3000
+F 0 "#PWR03" H 3150 2750 50  0001 C CNN
+F 1 "GND" H 3150 2850 50  0000 C CNN
+F 2 "" H 3150 3000 50  0000 C CNN
+F 3 "" H 3150 3000 50  0000 C CNN
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3000 3150 2850
+$Comp
+L GND #PWR04
+U 1 1 56B5254A
+P 2450 2350
+F 0 "#PWR04" H 2450 2100 50  0001 C CNN
+F 1 "GND" H 2450 2200 50  0000 C CNN
+F 2 "" H 2450 2350 50  0000 C CNN
+F 3 "" H 2450 2350 50  0000 C CNN
+	1    2450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2350 2450 2200
+Wire Wire Line
+	2450 2200 2500 2200
+Wire Wire Line
+	2500 2200 2500 1950
+Wire Wire Line
+	3550 1600 3550 1800
+$Comp
+L Q_NMOS_DGS Q1
+U 1 1 56B52752
+P 4300 1900
+F 0 "Q1" H 4600 1950 50  0000 R CNN
+F 1 "Q_NMOS_DGS" H 4950 1850 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 4500 2000 50  0001 C CNN
+F 3 "" H 4300 1900 50  0000 C CNN
+	1    4300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1900 4000 1900
+Wire Wire Line
+	4400 1600 4400 1700
+Wire Wire Line
+	4400 2100 4400 2300
+$Comp
+L R R7
+U 1 1 56B5282D
+P 4400 2450
+F 0 "R7" V 4480 2450 50  0000 C CNN
+F 1 "4K7" V 4400 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4330 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0000 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 2250
+$Comp
+L GND #PWR05
+U 1 1 56B5288E
+P 4400 2700
+F 0 "#PWR05" H 4400 2450 50  0001 C CNN
+F 1 "GND" H 4400 2550 50  0000 C CNN
+F 2 "" H 4400 2700 50  0000 C CNN
+F 3 "" H 4400 2700 50  0000 C CNN
+	1    4400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2700 4400 2600
+Connection ~ 2250 1200
+$Comp
+L C C2
+U 1 1 56B52E75
+P 2750 2400
+F 0 "C2" H 2775 2500 50  0000 L CNN
+F 1 ".1u" H 2775 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2788 2250 50  0001 C CNN
+F 3 "" H 2750 2400 50  0000 C CNN
+	1    2750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL972 U1
+U 1 1 56B51EBF
+P 2500 1850
+F 0 "U1" H 2500 2050 60  0000 C CNN
+F 1 "TL972" H 2500 1650 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 2500 1850 60  0001 C CNN
+F 3 "" H 2500 1850 60  0000 C CNN
+	1    2500 1850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2150 2750 2250
+$Comp
+L GND #PWR06
+U 1 1 56B5327A
+P 2750 2700
+F 0 "#PWR06" H 2750 2450 50  0001 C CNN
+F 1 "GND" H 2750 2550 50  0000 C CNN
+F 2 "" H 2750 2700 50  0000 C CNN
+F 3 "" H 2750 2700 50  0000 C CNN
+	1    2750 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2700 2750 2550
+$Comp
+L +12V #PWR07
+U 1 1 56B53C33
+P 3550 1600
+F 0 "#PWR07" H 3550 1450 50  0001 C CNN
+F 1 "+12V" H 3550 1740 50  0000 C CNN
+F 2 "" H 3550 1600 50  0000 C CNN
+F 3 "" H 3550 1600 50  0000 C CNN
+	1    3550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR08
+U 1 1 56B53EF5
+P 4400 1600
+F 0 "#PWR08" H 4400 1450 50  0001 C CNN
+F 1 "+12V" H 4400 1740 50  0000 C CNN
+F 2 "" H 4400 1600 50  0000 C CNN
+F 3 "" H 4400 1600 50  0000 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR09
+U 1 1 56B5407A
+P 2750 2150
+F 0 "#PWR09" H 2750 2000 50  0001 C CNN
+F 1 "+12V" H 2750 2290 50  0000 C CNN
+F 2 "" H 2750 2150 50  0000 C CNN
+F 3 "" H 2750 2150 50  0000 C CNN
+	1    2750 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 800  0    60   Input ~ 0
+Rectified
+Wire Wire Line
+	1400 800  1600 800 
+Text GLabel 5250 1200 2    60   Input ~ 0
+OutputAfterRsense
+Text GLabel 4950 2250 2    60   Input ~ 0
+AmplifiedVsense
+Text GLabel 3100 1400 2    60   Input ~ 0
+Vsense
+Wire Wire Line
+	3100 1400 3050 1400
+Connection ~ 3050 1550
+$Comp
+L Q_PMOS_DGS Q2
+U 1 1 56B56139
+P 5550 1850
+F 0 "Q2" H 5850 1900 50  0000 R CNN
+F 1 "Q_PMOS_DGS" H 6200 1800 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 5750 1950 50  0001 C CNN
+F 3 "" H 5550 1850 50  0000 C CNN
+	1    5550 1850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5350 1850 4850 1850
+Wire Wire Line
+	4850 1850 4850 2250
+Connection ~ 4850 2250
+Wire Wire Line
+	5650 1650 5100 1650
+Wire Wire Line
+	5100 1650 5100 1200
+Connection ~ 5100 1200
+Wire Wire Line
+	5650 2050 6550 2050
+Text GLabel 6550 2050 2    60   Input ~ 0
+OutputAfterPassFET
+$EndSCHEMATC

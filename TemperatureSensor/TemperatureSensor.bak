@@ -1,0 +1,421 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TedsComponents
+LIBS:TemperatureSensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BATTERY BT1
+U 1 1 54F92275
+P 2000 2650
+F 0 "BT1" H 2000 2850 50  0000 C CNN
+F 1 "BATTERY" H 2000 2460 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2000 2650 60  0001 C CNN
+F 3 "" H 2000 2650 60  0000 C CNN
+	1    2000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L ATTINY85-P IC1
+U 1 1 54F92312
+P 4250 2700
+F 0 "IC1" H 3100 3100 40  0000 C CNN
+F 1 "ATTINY85-P" H 5250 2300 40  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 5250 2700 35  0000 C CIN
+F 3 "" H 4250 2700 60  0000 C CNN
+	1    4250 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U1
+U 1 1 54F92C44
+P 8100 3100
+F 0 "U1" H 8250 3700 70  0000 C CNN
+F 1 "74HC595" H 8100 2500 70  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 8100 3100 60  0001 C CNN
+F 3 "" H 8100 3100 60  0000 C CNN
+	1    8100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 54F92F96
+P 1450 2600
+F 0 "P1" H 1450 2750 50  0000 C CNN
+F 1 "CONN_01X02" V 1550 2600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1450 2600 60  0001 C CNN
+F 3 "" H 1450 2600 60  0000 C CNN
+	1    1450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2550 1250 2250
+Wire Wire Line
+	2000 2250 2000 2350
+Wire Wire Line
+	1250 2650 1250 3050
+Wire Wire Line
+	1250 3050 2900 3050
+Wire Wire Line
+	2000 3050 2000 2950
+$Comp
+L R R1
+U 1 1 54F9325F
+P 9200 2650
+F 0 "R1" V 9280 2650 50  0000 C CNN
+F 1 "R" V 9207 2651 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 2650 30  0001 C CNN
+F 3 "" H 9200 2650 30  0000 C CNN
+	1    9200 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 54F9335C
+P 9200 2750
+F 0 "R2" V 9280 2750 50  0000 C CNN
+F 1 "R" V 9207 2751 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 2750 30  0001 C CNN
+F 3 "" H 9200 2750 30  0000 C CNN
+	1    9200 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 54F93382
+P 9200 2850
+F 0 "R3" V 9280 2850 50  0000 C CNN
+F 1 "R" V 9207 2851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 2850 30  0001 C CNN
+F 3 "" H 9200 2850 30  0000 C CNN
+	1    9200 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 54F933A6
+P 9200 2950
+F 0 "R4" V 9280 2950 50  0000 C CNN
+F 1 "R" V 9207 2951 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 2950 30  0001 C CNN
+F 3 "" H 9200 2950 30  0000 C CNN
+	1    9200 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 54F933D0
+P 9200 3050
+F 0 "R5" V 9280 3050 50  0000 C CNN
+F 1 "R" V 9207 3051 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 3050 30  0001 C CNN
+F 3 "" H 9200 3050 30  0000 C CNN
+	1    9200 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 54F93403
+P 9200 3150
+F 0 "R6" V 9280 3150 50  0000 C CNN
+F 1 "R" V 9207 3151 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 3150 30  0001 C CNN
+F 3 "" H 9200 3150 30  0000 C CNN
+	1    9200 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 54F9342D
+P 9200 3250
+F 0 "R7" V 9280 3250 50  0000 C CNN
+F 1 "R" V 9207 3251 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 3250 30  0001 C CNN
+F 3 "" H 9200 3250 30  0000 C CNN
+	1    9200 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 2650 9050 2650
+Wire Wire Line
+	8800 2750 9050 2750
+Wire Wire Line
+	8800 2850 9050 2850
+Wire Wire Line
+	8800 2950 9050 2950
+Wire Wire Line
+	8800 3050 9050 3050
+Wire Wire Line
+	8800 3150 9050 3150
+Wire Wire Line
+	8800 3250 9050 3250
+Wire Wire Line
+	9350 2650 9600 2650
+Wire Wire Line
+	9350 2750 9600 2750
+Wire Wire Line
+	9350 2850 9600 2850
+Wire Wire Line
+	9350 2950 9600 2950
+Wire Wire Line
+	9350 3050 9600 3050
+Wire Wire Line
+	9350 3150 9600 3150
+Wire Wire Line
+	9350 3250 9600 3250
+Wire Wire Line
+	2900 2250 2900 2450
+Connection ~ 2000 2250
+Wire Wire Line
+	2900 3050 2900 2950
+Connection ~ 2000 3050
+Wire Wire Line
+	2650 2250 2650 3800
+Connection ~ 2650 2250
+Wire Wire Line
+	2650 4000 2400 4000
+Wire Wire Line
+	2400 4000 2400 3050
+Connection ~ 2400 3050
+Wire Wire Line
+	3550 3850 5700 3850
+Wire Wire Line
+	5700 3850 5700 2850
+Wire Wire Line
+	5700 2850 5600 2850
+Wire Wire Line
+	7800 2250 7800 2550
+Connection ~ 2900 2250
+Wire Wire Line
+	7800 3650 7800 4300
+Wire Wire Line
+	2050 4300 2050 3050
+Connection ~ 2050 3050
+Connection ~ 7800 4300
+Wire Wire Line
+	7400 2950 6550 2950
+Wire Wire Line
+	6550 2950 6550 2250
+Connection ~ 6550 2250
+Wire Wire Line
+	7400 3250 7050 3250
+Wire Wire Line
+	7050 3250 7050 4300
+Connection ~ 7050 4300
+Wire Wire Line
+	10000 4300 2050 4300
+$Comp
+L R R8
+U 1 1 54FE56B5
+P 9200 3350
+F 0 "R8" V 9280 3350 50  0000 C CNN
+F 1 "R" V 9207 3351 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9130 3350 30  0001 C CNN
+F 3 "" H 9200 3350 30  0000 C CNN
+	1    9200 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 3350 9050 3350
+Wire Wire Line
+	9350 3350 9600 3350
+$Comp
+L LED D1
+U 1 1 54FE575E
+P 9800 2650
+F 0 "D1" H 9800 2750 50  0000 C CNN
+F 1 "LED" H 9800 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 2650 60  0001 C CNN
+F 3 "" H 9800 2650 60  0000 C CNN
+	1    9800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 54FE57DB
+P 9800 2750
+F 0 "D2" H 9800 2850 50  0000 C CNN
+F 1 "LED" H 9800 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 2750 60  0001 C CNN
+F 3 "" H 9800 2750 60  0000 C CNN
+	1    9800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 54FE580F
+P 9800 2850
+F 0 "D3" H 9800 2950 50  0000 C CNN
+F 1 "LED" H 9800 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 2850 60  0001 C CNN
+F 3 "" H 9800 2850 60  0000 C CNN
+	1    9800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 54FE5875
+P 9800 2950
+F 0 "D4" H 9800 3050 50  0000 C CNN
+F 1 "LED" H 9800 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 2950 60  0001 C CNN
+F 3 "" H 9800 2950 60  0000 C CNN
+	1    9800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D5
+U 1 1 54FE58A9
+P 9800 3050
+F 0 "D5" H 9800 3150 50  0000 C CNN
+F 1 "LED" H 9800 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 3050 60  0001 C CNN
+F 3 "" H 9800 3050 60  0000 C CNN
+	1    9800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D6
+U 1 1 54FE58DF
+P 9800 3150
+F 0 "D6" H 9800 3250 50  0000 C CNN
+F 1 "LED" H 9800 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 3150 60  0001 C CNN
+F 3 "" H 9800 3150 60  0000 C CNN
+	1    9800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D7
+U 1 1 54FE591B
+P 9800 3250
+F 0 "D7" H 9800 3350 50  0000 C CNN
+F 1 "LED" H 9800 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 3250 60  0001 C CNN
+F 3 "" H 9800 3250 60  0000 C CNN
+	1    9800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D8
+U 1 1 54FE5955
+P 9800 3350
+F 0 "D8" H 9800 3450 50  0000 C CNN
+F 1 "LED" H 9800 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9800 3350 60  0001 C CNN
+F 3 "" H 9800 3350 60  0000 C CNN
+	1    9800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2650 10000 4300
+Connection ~ 10000 2750
+Connection ~ 10000 2850
+Connection ~ 10000 2950
+Connection ~ 10000 3050
+Connection ~ 10000 3150
+Connection ~ 10000 3250
+Connection ~ 10000 3350
+$Comp
+L TMP36 Temp1
+U 1 1 54FE92E6
+P 3100 3850
+F 0 "Temp1" H 3100 4150 60  0000 C CNN
+F 1 "TMP36" H 3100 3550 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 3100 3850 60  0001 C CNN
+F 3 "" H 3100 3850 60  0000 C CNN
+	1    3100 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 3700
+$Comp
+L CONN_01X06 P2
+U 1 1 54FEA1EE
+P 5250 1400
+F 0 "P2" H 5250 1750 50  0000 C CNN
+F 1 "CONN_01X06" V 5350 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5250 1400 60  0001 C CNN
+F 3 "" H 5250 1400 60  0000 C CNN
+	1    5250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2250 7800 2250
+Wire Wire Line
+	1250 2250 2050 2250
+$Comp
+L Switch_DPST SW1
+U 1 1 55046211
+P 2350 1900
+F 0 "SW1" H 2650 1950 50  0000 C CNN
+F 1 "Switch_DPST" H 2650 1850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 2350 1900 60  0001 C CNN
+F 3 "" H 2350 1900 60  0000 C CNN
+	1    2350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2450 7400 2450
+Wire Wire Line
+	7400 2450 7400 2650
+Wire Wire Line
+	5600 2550 7250 2550
+Wire Wire Line
+	5600 2650 7200 2650
+Wire Wire Line
+	7250 3150 7400 3150
+Wire Wire Line
+	7250 2550 7250 3150
+Wire Wire Line
+	7200 2650 7200 2850
+Wire Wire Line
+	7200 2850 7400 2850
+Wire Wire Line
+	2050 2250 2050 2100
+Wire Wire Line
+	2450 2250 2450 1900
+Wire Wire Line
+	2450 1900 2050 1900
+Wire Wire Line
+	2050 1900 2050 1700
+$EndSCHEMATC

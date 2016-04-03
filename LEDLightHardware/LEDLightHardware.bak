@@ -1,0 +1,103 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LEDLightHardware-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY45-P IC?
+U 1 1 56FFFE4D
+P 2700 1450
+F 0 "IC?" H 1550 1850 50  0000 C CNN
+F 1 "ATTINY45-P" H 3700 1050 50  0000 C CNN
+F 2 "DIP8" H 3700 1450 50  0000 C CIN
+F 3 "" H 2700 1450 50  0000 C CNN
+	1    2700 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 56FFFF56
+P 1250 1050
+F 0 "#PWR?" H 1250 900 50  0001 C CNN
+F 1 "VCC" H 1250 1200 50  0000 C CNN
+F 2 "" H 1250 1050 50  0000 C CNN
+F 3 "" H 1250 1050 50  0000 C CNN
+	1    1250 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1050 1250 1200
+Wire Wire Line
+	1250 1200 1350 1200
+$Comp
+L GND #PWR?
+U 1 1 56FFFF6F
+P 1250 1750
+F 0 "#PWR?" H 1250 1500 50  0001 C CNN
+F 1 "GND" H 1250 1600 50  0000 C CNN
+F 2 "" H 1250 1750 50  0000 C CNN
+F 3 "" H 1250 1750 50  0000 C CNN
+	1    1250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1750 1250 1700
+Wire Wire Line
+	1250 1700 1350 1700
+Wire Wire Line
+	4050 1600 4100 1600
+Wire Wire Line
+	4100 1600 4100 1500
+Wire Wire Line
+	4050 1500 4400 1500
+Connection ~ 4100 1500
+Text GLabel 4400 1500 2    60   Input ~ 0
+CTRLSignal
+Text GLabel 4400 1300 2    60   Input ~ 0
+LEDOut
+Wire Wire Line
+	4400 1300 4050 1300
+NoConn ~ 4050 1200
+NoConn ~ 4050 1400
+NoConn ~ 4050 1700
+$EndSCHEMATC

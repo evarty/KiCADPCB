@@ -1,0 +1,395 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RCHov-cache
+LIBS:AutoHov-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NMOS_GDS Q?
+U 1 1 56C9BBA8
+P 4350 4450
+F 0 "Q?" H 4650 4500 50  0000 R CNN
+F 1 "Q_NMOS_GDS" H 5000 4400 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4550 4550 50  0001 C CNN
+F 3 "" H 4350 4450 50  0000 C CNN
+	1    4350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 56C9BBA9
+P 4350 1350
+F 0 "BT?" H 4450 1400 50  0000 L CNN
+F 1 "Battery" H 4450 1300 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" V 4350 1390 50  0001 C CNN
+F 3 "" V 4350 1390 50  0000 C CNN
+	1    4350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9BBAB
+P 3950 1650
+F 0 "#PWR?" H 3950 1400 50  0001 C CNN
+F 1 "GND" H 3950 1500 50  0000 C CNN
+F 2 "" H 3950 1650 50  0000 C CNN
+F 3 "" H 3950 1650 50  0000 C CNN
+	1    3950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56C9BBAC
+P 4300 1050
+F 0 "#FLG?" H 4300 1145 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 1230 50  0000 C CNN
+F 2 "" H 4300 1050 50  0000 C CNN
+F 3 "" H 4300 1050 50  0000 C CNN
+	1    4300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56C9BBAD
+P 4150 1650
+F 0 "#FLG?" H 4150 1745 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 1830 50  0000 C CNN
+F 2 "" H 4150 1650 50  0000 C CNN
+F 3 "" H 4150 1650 50  0000 C CNN
+	1    4150 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 56C9BBAE
+P 4450 3800
+F 0 "L?" V 4400 3800 50  0000 C CNN
+F 1 "RightMotor" V 4550 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4450 3800 50  0001 C CNN
+F 3 "" H 4450 3800 50  0000 C CNN
+	1    4450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9BBB0
+P 4450 4800
+F 0 "#PWR?" H 4450 4550 50  0001 C CNN
+F 1 "GND" H 4450 4650 50  0000 C CNN
+F 2 "" H 4450 4800 50  0000 C CNN
+F 3 "" H 4450 4800 50  0000 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 56C9BBB1
+P 4750 3800
+F 0 "D?" H 4750 3900 50  0000 C CNN
+F 1 "D" H 4750 3700 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 4750 3800 50  0001 C CNN
+F 3 "" H 4750 3800 50  0000 C CNN
+	1    4750 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NMOS_GDS Q?
+U 1 1 56C9BBB2
+P 6650 4400
+F 0 "Q?" H 6950 4450 50  0000 R CNN
+F 1 "Q_NMOS_GDS" H 7300 4350 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6850 4500 50  0001 C CNN
+F 3 "" H 6650 4400 50  0000 C CNN
+	1    6650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 56C9BBB3
+P 6750 3750
+F 0 "L?" V 6700 3750 50  0000 C CNN
+F 1 "LeftMotor" V 6850 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6750 3750 50  0001 C CNN
+F 3 "" H 6750 3750 50  0000 C CNN
+	1    6750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9BBB5
+P 6750 4750
+F 0 "#PWR?" H 6750 4500 50  0001 C CNN
+F 1 "GND" H 6750 4600 50  0000 C CNN
+F 2 "" H 6750 4750 50  0000 C CNN
+F 3 "" H 6750 4750 50  0000 C CNN
+	1    6750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 56C9BBB6
+P 7050 3750
+F 0 "D?" H 7050 3850 50  0000 C CNN
+F 1 "D" H 7050 3650 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 7050 3750 50  0001 C CNN
+F 3 "" H 7050 3750 50  0000 C CNN
+	1    7050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NMOS_GDS Q?
+U 1 1 56C9BBB7
+P 1850 4400
+F 0 "Q?" H 2150 4450 50  0000 R CNN
+F 1 "Q_NMOS_GDS" H 2500 4350 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2050 4500 50  0001 C CNN
+F 3 "" H 1850 4400 50  0000 C CNN
+	1    1850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 56C9BBB8
+P 1950 3750
+F 0 "L?" V 1900 3750 50  0000 C CNN
+F 1 "VertMotor" V 2050 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 3750 50  0001 C CNN
+F 3 "" H 1950 3750 50  0000 C CNN
+	1    1950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9BBBA
+P 1950 4750
+F 0 "#PWR?" H 1950 4500 50  0001 C CNN
+F 1 "GND" H 1950 4600 50  0000 C CNN
+F 2 "" H 1950 4750 50  0000 C CNN
+F 3 "" H 1950 4750 50  0000 C CNN
+	1    1950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 56C9BBBB
+P 2250 3750
+F 0 "D?" H 2250 3850 50  0000 C CNN
+F 1 "D" H 2250 3650 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 2250 3750 50  0001 C CNN
+F 3 "" H 2250 3750 50  0000 C CNN
+	1    2250 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 1300 4400 0    60   Input ~ 0
+PWM0
+Text GLabel 3800 4450 0    60   Input ~ 0
+PWM1
+Text GLabel 5950 4400 0    60   Input ~ 0
+PWM2
+$Comp
+L AVR-ISP-6 CON?
+U 1 1 56C9BBC2
+P 2400 2600
+F 0 "CON?" H 2295 2840 50  0000 C CNN
+F 1 "AVR-ISP-6" H 2135 2370 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" V 1880 2640 50  0001 C CNN
+F 3 "" H 2375 2600 50  0000 C CNN
+	1    2400 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 2700 0    60   Input ~ 0
+RST
+$Comp
+L GND #PWR?
+U 1 1 56C9BBC3
+P 2700 2900
+F 0 "#PWR?" H 2700 2650 50  0001 C CNN
+F 1 "GND" H 2700 2750 50  0000 C CNN
+F 2 "" H 2700 2900 50  0000 C CNN
+F 3 "" H 2700 2900 50  0000 C CNN
+	1    2700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56C9BBC4
+P 3700 2450
+F 0 "C?" H 3725 2550 50  0000 L CNN
+F 1 ".1u" H 3725 2350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 3738 2300 50  0001 C CNN
+F 3 "" H 3700 2450 50  0000 C CNN
+	1    3700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9BBC6
+P 3700 2800
+F 0 "#PWR?" H 3700 2550 50  0001 C CNN
+F 1 "GND" H 3700 2650 50  0000 C CNN
+F 2 "" H 3700 2800 50  0000 C CNN
+F 3 "" H 3700 2800 50  0000 C CNN
+	1    3700 2800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1050 5750 1650 1250
+U 56C9DBA2
+F0 "Control" 60
+F1 "file56C9DBA1.sch" 60
+$EndSheet
+Text GLabel 1900 2500 0    60   Input ~ 0
+MISO
+Text GLabel 1900 2600 0    60   Input ~ 0
+SCK
+Text GLabel 2850 2600 2    60   Input ~ 0
+MOSI
+Text GLabel 3750 900  0    60   Input ~ 0
+3v7
+Wire Wire Line
+	3800 1200 4800 1200
+Wire Wire Line
+	3800 1500 4800 1500
+Connection ~ 4350 1200
+Connection ~ 4350 1500
+Wire Wire Line
+	4050 900  4050 1200
+Connection ~ 4050 1200
+Wire Wire Line
+	3950 1650 3950 1500
+Connection ~ 3950 1500
+Wire Wire Line
+	4300 1050 4200 1050
+Wire Wire Line
+	4200 1050 4200 1200
+Connection ~ 4200 1200
+Wire Wire Line
+	4150 1650 4150 1500
+Connection ~ 4150 1500
+Wire Wire Line
+	4450 3400 4450 3500
+Wire Wire Line
+	4450 4100 4450 4250
+Wire Wire Line
+	4450 4800 4450 4650
+Wire Wire Line
+	4750 3650 4750 3450
+Wire Wire Line
+	4750 3450 4450 3450
+Connection ~ 4450 3450
+Wire Wire Line
+	4750 3950 4750 4150
+Wire Wire Line
+	4750 4150 4450 4150
+Connection ~ 4450 4150
+Wire Wire Line
+	6750 3350 6750 3450
+Wire Wire Line
+	6750 4050 6750 4200
+Wire Wire Line
+	6750 4750 6750 4600
+Wire Wire Line
+	7050 3600 7050 3400
+Wire Wire Line
+	7050 3400 6750 3400
+Connection ~ 6750 3400
+Wire Wire Line
+	7050 3900 7050 4100
+Wire Wire Line
+	7050 4100 6750 4100
+Connection ~ 6750 4100
+Wire Wire Line
+	1950 3350 1950 3450
+Wire Wire Line
+	1950 4050 1950 4200
+Wire Wire Line
+	1950 4750 1950 4600
+Wire Wire Line
+	2250 3600 2250 3400
+Wire Wire Line
+	2250 3400 1950 3400
+Connection ~ 1950 3400
+Wire Wire Line
+	2250 3900 2250 4100
+Wire Wire Line
+	2250 4100 1950 4100
+Connection ~ 1950 4100
+Wire Wire Line
+	1300 4400 1650 4400
+Wire Wire Line
+	3800 4450 4150 4450
+Wire Wire Line
+	5950 4400 6450 4400
+Wire Wire Line
+	2800 2300 2800 2500
+Wire Wire Line
+	2800 2500 2500 2500
+Wire Wire Line
+	2700 2900 2700 2700
+Wire Wire Line
+	2700 2700 2500 2700
+Wire Wire Line
+	2850 2600 2500 2600
+Wire Wire Line
+	1900 2500 2250 2500
+Wire Wire Line
+	1900 2600 2250 2600
+Wire Wire Line
+	1900 2700 2250 2700
+Wire Wire Line
+	3700 2200 3700 2300
+Wire Wire Line
+	3700 2800 3700 2600
+Wire Wire Line
+	3750 900  4050 900 
+Text GLabel 2800 2300 2    60   Input ~ 0
+3v7
+Text GLabel 3700 2200 1    60   Input ~ 0
+3v7
+Text GLabel 1950 3350 1    60   Input ~ 0
+3v7
+Text GLabel 4450 3400 1    60   Input ~ 0
+3v7
+Text GLabel 6750 3350 1    60   Input ~ 0
+3v7
+$EndSCHEMATC

@@ -1,0 +1,169 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TedsComponents
+LIBS:BenchPowerSupply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X01 P1
+U 1 1 56B51153
+P 1550 1100
+F 0 "P1" H 1550 1200 50  0000 C CNN
+F 1 "CONN_01X01" V 1650 1100 50  0000 C CNN
+F 2 "Connect:1pin" H 1550 1100 50  0001 C CNN
+F 3 "" H 1550 1100 50  0000 C CNN
+	1    1550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 56B51202
+P 1550 1750
+F 0 "P2" H 1550 1850 50  0000 C CNN
+F 1 "CONN_01X01" V 1650 1750 50  0000 C CNN
+F 2 "Connect:1pin" H 1550 1750 50  0001 C CNN
+F 3 "" H 1550 1750 50  0000 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 850  1000 1100
+Wire Wire Line
+	1000 1100 1350 1100
+Wire Wire Line
+	1100 1750 1100 2100
+Wire Wire Line
+	1100 1750 1350 1750
+$Sheet
+S 800  3000 1400 1000
+U 56B51364
+F0 "CurrentSensing" 60
+F1 "file56B51363.sch" 60
+$EndSheet
+$Comp
+L Diode_Bridge D1
+U 1 1 56B548BA
+P 2650 1550
+F 0 "D1" H 2400 1850 50  0000 C CNN
+F 1 "Diode_Bridge" H 3000 1200 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_4pin_Straight" H 2650 1550 50  0001 C CNN
+F 3 "" H 2650 1550 50  0000 C CNN
+	1    2650 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  850  0    60   Input ~ 0
+15VAC1
+Text GLabel 950  1850 0    60   Input ~ 0
+15VAC2
+Wire Wire Line
+	950  1850 1100 1850
+Wire Wire Line
+	850  850  2650 850 
+Wire Wire Line
+	2650 850  2650 1150
+Connection ~ 1000 850 
+Wire Wire Line
+	1100 2100 2650 2100
+Wire Wire Line
+	2650 2100 2650 1950
+Connection ~ 1100 1850
+$Comp
+L GND #PWR01
+U 1 1 56B54AE6
+P 2400 2500
+F 0 "#PWR01" H 2400 2250 50  0001 C CNN
+F 1 "GND" H 2400 2350 50  0000 C CNN
+F 2 "" H 2400 2500 50  0000 C CNN
+F 3 "" H 2400 2500 50  0000 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2500 3550 2500
+Wire Wire Line
+	2250 2500 2250 1550
+$Comp
+L CP C1
+U 1 1 56B54DF5
+P 3550 1850
+F 0 "C1" H 3575 1950 50  0000 L CNN
+F 1 "4u7" H 3575 1750 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 3588 1700 50  0001 C CNN
+F 3 "" H 3550 1850 50  0000 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1700 3550 1550
+Wire Wire Line
+	3550 2500 3550 2000
+Connection ~ 2400 2500
+$Comp
+L FUSE F1
+U 1 1 56B54E3B
+P 3300 1550
+F 0 "F1" H 3400 1600 50  0000 C CNN
+F 1 "FUSE" H 3200 1500 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_inline_Type-I" H 3300 1550 50  0001 C CNN
+F 3 "" H 3300 1550 50  0000 C CNN
+	1    3300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1550 4050 1550
+Connection ~ 3550 1550
+Text GLabel 4050 1550 2    60   Input ~ 0
+Rectified
+$Sheet
+S 2350 3000 750  750 
+U 56B551E0
+F0 "Internal12VRail" 60
+F1 "file56B551DF.sch" 60
+$EndSheet
+$Sheet
+S 850  4450 900  700 
+U 56B566F7
+F0 "OutputVoltages" 60
+F1 "file56B566F6.sch" 60
+$EndSheet
+$EndSCHEMATC

@@ -1,0 +1,44 @@
+# this is an example config file for pcb2gcode.
+# place this in the same directory as your gerber files to save typing
+
+# You may want to uncomment and change those in local project files
+front=TemperatureSensor-F_Cu.gbr
+#back=*.gbr
+drill=TemperatureSensor.drl
+#outline=*.gbr
+#verbose
+
+# parameters for isolation routing / engraving / etching
+zwork=-0.006
+zsafe=0.08
+zchange=1.0
+mill-feed=4
+mill-speed=30000
+offset=0.002
+#offset=1.0        #for voroni regions
+#extra-passes=2
+
+# parameters for cutting out boards
+cutter-diameter=0.125
+zcut=-0.08
+cut-feed=3
+cut-speed=20000
+cut-infeed=0.02
+#bridges=0.125
+#zbridges=0.08
+#bridgesnum=4
+optimise=false
+
+# drilling parameters
+zdrill=-0.2
+drill-feed=3
+drill-speed=20000
+drill-front=true
+
+dpi=1000
+#max-deviation=0
+nog81=true
+onedrill=true
+metricoutput=true
+#mirror-absolute=true
+#zero-start=true

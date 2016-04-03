@@ -1,0 +1,239 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BARREL_JACK CON1
+U 1 1 56C10DA0
+P 1650 1250
+F 0 "CON1" H 1650 1500 50  0000 C CNN
+F 1 "BARREL_JACK" H 1650 1050 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 1650 1250 50  0001 C CNN
+F 3 "" H 1650 1250 50  0000 C CNN
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 950  2200 1150
+Wire Wire Line
+	1950 1150 2750 1150
+$Comp
+L GND #PWR01
+U 1 1 56C11793
+P 2150 1600
+F 0 "#PWR01" H 2150 1350 50  0001 C CNN
+F 1 "GND" H 2150 1450 50  0000 C CNN
+F 2 "" H 2150 1600 50  0000 C CNN
+F 3 "" H 2150 1600 50  0000 C CNN
+	1    2150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1600 2150 1600
+Wire Wire Line
+	1950 1250 1950 1600
+Connection ~ 1950 1350
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 56C117B6
+P 2000 850
+F 0 "#FLG02" H 2000 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1030 50  0000 C CNN
+F 2 "" H 2000 850 50  0000 C CNN
+F 3 "" H 2000 850 50  0000 C CNN
+	1    2000 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 850  2000 1150
+Connection ~ 2000 1150
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 56C117D5
+P 1750 1800
+F 0 "#FLG03" H 1750 1895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 1980 50  0000 C CNN
+F 2 "" H 1750 1800 50  0000 C CNN
+F 3 "" H 1750 1800 50  0000 C CNN
+	1    1750 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 1800 1750 1600
+Connection ~ 1950 1600
+$Comp
+L LM317AT U1
+U 1 1 56C1183D
+P 3150 1200
+F 0 "U1" H 2950 1400 50  0000 C CNN
+F 1 "LM317AT" H 3150 1400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 3150 1300 50  0000 C CIN
+F 3 "" H 3150 1200 50  0000 C CNN
+	1    3150 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 1150
+$Comp
+L +9V #PWR04
+U 1 1 56C118BA
+P 2200 950
+F 0 "#PWR04" H 2200 800 50  0001 C CNN
+F 1 "+9V" H 2200 1090 50  0000 C CNN
+F 2 "" H 2200 950 50  0000 C CNN
+F 3 "" H 2200 950 50  0000 C CNN
+	1    2200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56C11917
+P 3600 1350
+F 0 "R1" V 3680 1350 50  0000 C CNN
+F 1 "1K" V 3600 1350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM20mm" V 3530 1350 50  0001 C CNN
+F 3 "" H 3600 1350 50  0000 C CNN
+	1    3600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1200 3600 1150
+Wire Wire Line
+	3550 1150 4500 1150
+Wire Wire Line
+	3150 1500 3750 1500
+Wire Wire Line
+	3150 1500 3150 1450
+$Comp
+L POT RV1
+U 1 1 56C11954
+P 3600 1850
+F 0 "RV1" H 3600 1750 50  0000 C CNN
+F 1 "19K" H 3600 1850 50  0000 C CNN
+F 2 "Footprints:SalvagedPotFootprint" H 3600 1850 50  0001 C CNN
+F 3 "" H 3600 1850 50  0000 C CNN
+	1    3600 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1600 3600 1500
+Wire Wire Line
+	3750 1500 3750 1850
+Connection ~ 3600 1500
+$Comp
+L GND #PWR05
+U 1 1 56C11A0E
+P 3600 2150
+F 0 "#PWR05" H 3600 1900 50  0001 C CNN
+F 1 "GND" H 3600 2000 50  0000 C CNN
+F 2 "" H 3600 2150 50  0000 C CNN
+F 3 "" H 3600 2150 50  0000 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2150 3600 2100
+$Comp
+L CONN_01X03 P3
+U 1 1 56C11B19
+P 4700 1200
+F 0 "P3" H 4700 1400 50  0000 C CNN
+F 1 "CONN_01X03" V 4800 1200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4700 1200 50  0001 C CNN
+F 3 "" H 4700 1200 50  0000 C CNN
+	1    4700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 56C11B51
+P 4700 1700
+F 0 "P4" H 4700 1900 50  0000 C CNN
+F 1 "CONN_01X03" V 4800 1700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4700 1700 50  0001 C CNN
+F 3 "" H 4700 1700 50  0000 C CNN
+	1    4700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 56C11BA3
+P 2650 2650
+F 0 "P1" H 2650 2850 50  0000 C CNN
+F 1 "CONN_01X03" V 2750 2650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2650 2650 50  0001 C CNN
+F 3 "" H 2650 2650 50  0000 C CNN
+	1    2650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 56C11C3C
+P 2650 3150
+F 0 "P2" H 2650 3350 50  0000 C CNN
+F 1 "CONN_01X03" V 2750 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2650 3150 50  0001 C CNN
+F 3 "" H 2650 3150 50  0000 C CNN
+	1    2650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1100 4500 1800
+Connection ~ 3600 1150
+Connection ~ 4500 1150
+Connection ~ 4500 1200
+Connection ~ 4500 1300
+Connection ~ 4500 1600
+Connection ~ 4500 1700
+Wire Wire Line
+	2050 1600 2050 2550
+Wire Wire Line
+	2050 2550 2450 2550
+Connection ~ 2050 1600
+Wire Wire Line
+	2450 2550 2450 3250
+Connection ~ 2450 2650
+Connection ~ 2450 2750
+Connection ~ 2450 3050
+Connection ~ 2450 3150
+Connection ~ 2450 2550
+$EndSCHEMATC
